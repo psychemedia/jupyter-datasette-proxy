@@ -6,6 +6,7 @@ setuptools.setup(
   py_modules=['nbdatasette'],
   entry_points={
       'jupyter_serverproxy_servers': [
+          #path = module:entry_function
           'datasette = nbdatasette:setup_datasette',
       ]
   },
