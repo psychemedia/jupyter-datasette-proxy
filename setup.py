@@ -6,7 +6,7 @@ setuptools.setup(
   py_modules=['nbdatasette'],
   entry_points={
       'jupyter_serverproxy_servers': [
-          'Datasette = nbdatasette:setup_datasette',
+          'datasette = nbdatasette:setup_datasette',
       ]
   },
 )
