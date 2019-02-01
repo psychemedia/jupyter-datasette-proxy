@@ -9,6 +9,6 @@ def setup_datasette():
     'launcher_entry': {
         'enabled': True,
         #'icon_path': '/home/jovyan/.jupyter/datasette.svg',
-        'title': 'datasette',
+        'title': 'Datasette',
     },
   }
