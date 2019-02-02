@@ -11,7 +11,8 @@ def setup_datasette():
     #I am so in the land of so-tired I have no idea what anything does.
     #'command': ['datasette', 'serve', '-p', '{port}', '--static', 'static:{base_url}', dbpath],
     'command': ['datasette', 'serve', '-p', '{port}', dbpath],
-    'absolute_url': True,
+    #With absolute_url True we get infinite redirects?
+    'absolute_url': False,
     #The following needs a the labextension installing.
     #eg in postBuild: jupyter labextension install jupyterlab-server-proxy
     'launcher_entry': {
