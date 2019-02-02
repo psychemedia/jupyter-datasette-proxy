@@ -1,7 +1,7 @@
 # jupyterserverproxy-datasette-demo
 Using datasette with Jupyter Server Proxy.
 
-I'm not sure *why* you'd want to do this, but you can...
+I'm not sure *why* you'd want to do this, but you can... or should be able to once I figure out how to resolve the static files properly...
 
 Launch into notebook interface (run `datasette` from the notebook `New` menu): [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/psychemedia/jupyterserverproxy-datasette-demo/master)
 
