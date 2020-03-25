@@ -10,7 +10,7 @@ def setup_datasette():
             "-p",
             "{port}",
             "--config",
-            "base_url:{base_url}",
+            "base_url:{base_url}datasette/",
             dbpath,
         ],
         "absolute_url": False,
