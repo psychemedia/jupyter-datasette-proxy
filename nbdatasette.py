@@ -13,7 +13,7 @@ def setup_datasette():
             "base_url:{base_url}datasette/",
             dbpath,
         ],
-        "absolute_url": False,
+        "absolute_url": True,
         # The following needs a the labextension installing.
         # eg in postBuild: jupyter labextension install jupyterlab-server-proxy
         "launcher_entry": {
