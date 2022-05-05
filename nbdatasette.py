@@ -2,7 +2,6 @@ import os
 
 
 def setup_datasette():
-    dbpath = os.path.join(os.environ["HOME"], "dakar_sql.sqlite")
     return {
         "command": [
             "datasette",
@@ -11,7 +10,8 @@ def setup_datasette():
             "{port}",
             "--config",
             "base_url:{base_url}datasette/",
-            dbpath,
+            "-d",
+            os.environ["HOME"]
         ],
         "absolute_url": True,
         # The following needs a the labextension installing.
