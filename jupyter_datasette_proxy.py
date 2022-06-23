@@ -8,10 +8,8 @@ def setup_datasette():
             "serve",
             "-p",
             "{port}",
-            "--config",
+            "--setting",
             "base_url:{base_url}datasette/",
-            "-d",
-            os.environ["HOME"]
         ],
         "absolute_url": True,
         # The following needs a the labextension installing.
