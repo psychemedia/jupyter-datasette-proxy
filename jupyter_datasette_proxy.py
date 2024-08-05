@@ -9,7 +9,7 @@ def setup_datasette():
             "-p",
             "{port}",
             "--setting",
-            "base_url:{base_url}datasette/",
+            "base_url", "{base_url}datasette/",
         ],
         "absolute_url": True,
         # The following needs a the labextension installing.
